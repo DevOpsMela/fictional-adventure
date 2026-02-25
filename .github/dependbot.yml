@@ -1,0 +1,8 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"   # Specifies npm as the package manager
+    directory: "/"            # Location of your package.json
+    schedule:
+      interval: "weekly"      # Options: daily, weekly, monthly
+      day: "monday"           # Optional: specific day for weekly updates
+    open-pull-requests-limit: 5 # Limits the number of open PRs to avoid noise
